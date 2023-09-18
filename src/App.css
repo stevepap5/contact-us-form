@@ -1,38 +1,89 @@
-.App {
+html,
+body {
+  background: linear-gradient(90deg, #6cb7ff 10%, #7985ff 90%);
+}
+
+.center {
+  width: 35%;
+  height: 80%;
+  background-color: #ffffff;
   text-align: center;
+  border-radius: 1%;
+  position: relative;
+  left: 30%;
+  top: 120px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form {
+  text-align: center;
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headline {
+  margin-top: 10%;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.test,
+.email,
+.subject {
+  font-size: 14px;
+  padding: 16px;
+  width: 57%;
+  margin: 2%;
+  border: unset;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.textarea {
+  font-size: 14px;
+  padding: 16px;
+  width: 57%;
+  height: 120px;
+  margin: 1%;
+  border: unset;
+  border-radius: 4px;
+  resize: none;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+input:focus {
+  border: 1px solid #7985ff;
+  outline: none !important;
+}
+
+.textarea:focus {
+  border: 1px solid #7985ff;
+  outline: none !important;
+}
+
+.btn {
+  width: 62.5%;
+  height: 57px;
+  display: inline-flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background: linear-gradient(115deg, #6cb7ff 10%, #7985ff 90%);
+  border-radius: 0.5em;
+  bottom: 10%;
+  left: 18.5%;
   color: white;
+  font-size: 18px;
+  margin-bottom: 10%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lbl {
+  display: inline-block;
+  width: 75%;
+  font: 18px;
+  color: #242e4c;
 }
