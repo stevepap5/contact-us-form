@@ -1,3 +1,4 @@
+import contactFormMessage from "../../components/contactFormMessage";
 import ActionType from "./actionType";
 
 interface SendMessageAction {
@@ -6,7 +7,7 @@ interface SendMessageAction {
 
 interface SuccessMessageAction {
   type: ActionType.SUCCESS_MESSAGE;
-  payload: string;
+  payload: contactFormMessage;
 }
 
 interface ErrorMessageAction {
@@ -14,6 +15,9 @@ interface ErrorMessageAction {
   payload: string;
 }
 
-type Action = SendMessageAction | SuccessMessageAction | ErrorMessageAction;
+type ContactFormAction =
+  | SendMessageAction
+  | SuccessMessageAction
+  | ErrorMessageAction;
 
-export default Action;
+export default ContactFormAction;

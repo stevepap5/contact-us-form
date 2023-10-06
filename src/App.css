@@ -56,11 +56,13 @@ body {
     rgba(0, 0, 0, 0) 0px 0px 0px 0px;
 }
 
+input:hover,
 input:focus {
   border: 1px solid #7985ff;
   outline: none !important;
 }
 
+.textarea:hover,
 .textarea:focus {
   border: 1px solid #7985ff;
   outline: none !important;
@@ -86,4 +88,31 @@ input:focus {
   width: 75%;
   font: 18px;
   color: #242e4c;
+}
+
+.modal {
+  background: #ffffff;
+  z-index: 1;
+  position: relative;
+  left: 150%;
+  top: 50%;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.close {
+  background: #ffffff;
+  color: #969696;
+  z-index: 1;
+  border: none;
+  margin-left: 6px;
+  font-size: large;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

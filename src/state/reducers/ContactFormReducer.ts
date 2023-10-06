@@ -1,6 +1,6 @@
 import contactFormMessage from "../../components/contactFormMessage";
 import ActionType from "../actions/actionType";
-import Action from "../actions/actions";
+import ContactFormAction from "../actions/contactFormActions";
 
 const initialForm: contactFormMessage = {
   name: undefined,
@@ -10,8 +10,8 @@ const initialForm: contactFormMessage = {
 };
 
 export const ContactFormReducer = (
-  contactForm: contactFormMessage = initialForm,
-  action: Action
+  contactForm: contactFormMessage,
+  action: ContactFormAction
 ): contactFormMessage => {
   switch (action.type) {
     case ActionType.SEND_MESSAGE:
@@ -21,6 +21,6 @@ export const ContactFormReducer = (
     case ActionType.ERROR_MESSAGE:
       return contactForm;
     default:
-      return contactForm;
+      return initialForm;
   }
 };

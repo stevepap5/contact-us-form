@@ -1,9 +1,10 @@
 import { Dispatch } from "redux";
 import ActionType from "./actionType";
-import Action from "./actions";
+import ContactFormAction from "./contactFormActions";
+import { ModalAction } from "./modalActions";
 
 export const sendMessage = (event: React.FormEvent<HTMLFormElement>) => {
-  return async (dispatch: Dispatch<Action>) => {
+  return async (dispatch: Dispatch<ContactFormAction | ModalAction>) => {
     dispatch({ type: ActionType.SEND_MESSAGE });
 
     try {
@@ -25,10 +26,20 @@ export const sendMessage = (event: React.FormEvent<HTMLFormElement>) => {
         },
         body: json,
       });
+
+      dispatch({
+        type: ActionType.OPEN_MODAL_SUCCESS,
+        payload: true,
+      });
     } catch (error) {
       dispatch({
         type: ActionType.ERROR_MESSAGE,
         payload: (error as Error).message,
+      });
+
+      dispatch({
+        type: ActionType.CLOSE_MODAL,
+        payload: true,
       });
     }
   };
