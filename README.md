@@ -1,7 +1,7 @@
 # About the project
 I build a Contact Us Form for a website which integrate with a Web3Forms API to build this contact Form. 
-[https://www.frontendpro.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdi5hmgowi%2Fimage%2Fupload%2Fv1%2Fchallenges%2Fcontact-us-form%2Fdesktop-cover.png&w=640&q=75]
 
+![contact-form](https://github.com/stevepap5/contact-us-form/assets/46964020/03636eb1-2811-468d-a4b1-41699abaaab7)
 
 # Getting Started with Create React App
 
